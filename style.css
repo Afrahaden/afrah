@@ -41,7 +41,7 @@ section {
 }
 
 .about,
-.services,
+.projects,
 .skills,
 .teams,
 .contact,
@@ -50,7 +50,7 @@ footer {
 }
 
 .about .about-content,
-.services .serv-content,
+.projects .serv-content,
 .skills .skills-content,
 .contact .contact-content {
     display: flex;
@@ -191,7 +191,9 @@ section .title::after {
 /* home section styling */
 .home {
     display: flex;
-    background: url("images/banner.jpg");
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 43%, rgba(10,113,134,1) 100%);
+    /* background: #000; */
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -211,6 +213,7 @@ section .title::after {
 
 .home .home-content .text-1 {
     font-size: 27px;
+    margin-top: 70px;
 }
 
 .home .home-content .text-2 {
@@ -219,15 +222,18 @@ section .title::after {
     margin-left: -3px;
 }
 
-.home .home-content .text-3 {
-    font-size: 40px;
-    margin: 5px 0;
+.home-image{
+    border-radius: 50%;
 }
 
-.home .home-content .text-3 span {
-    color: #733ef0;
-    font-weight: 500;
+.home .home-content p{
+    font-size: 25px;
+    font-weight: 200;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    line-height: 2;
 }
+
 
 .home .home-content a {
     display: inline-block;
@@ -299,61 +305,81 @@ section .title::after {
     background: none;
 }
 
-/* services section styling */
-.services,
+/* projects section styling */
+.projects,
 .teams {
     color: #fff;
     background: #111;
 }
 
-.services .title::before,
+.projects .title::before,
 .teams .title::before {
     background: #fff;
 }
 
-.services .title::after,
+.projects .title::after,
 .teams .title::after {
     background: #111;
-    content: "what i provide";
+    content: "Personal projects";
 }
 
-.services .serv-content .card {
+.projects .serv-content .card {
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
+    margin-top: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-bottom: 5re;
 }
 
-.services .serv-content .card:hover {
+.projects .serv-content .card:hover {
     background: #733ef0;
 }
 
-.services .serv-content .card .box {
+.projects .serv-content .card .box {
     transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover .box {
+.projects .serv-content .card:hover .box {
     transform: scale(1.05);
 }
 
-.services .serv-content .card i {
+.projects .serv-content .card i {
     font-size: 50px;
     color: #733ef0;
     transition: color 0.3s ease;
 }
 
-.services .serv-content .card:hover i {
+.projects .serv-content .card:hover i {
     color: #fff;
 }
 
-.services .serv-content .card .text {
+.projects .serv-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+
+.project-link{
+    display: inline-block;
+    background: #1fcc4a;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover{
+    color: #fff;
+    background: #222;
+    transition: all 0.3s ease;
 }
 
 /* contact section styling */
@@ -572,7 +598,7 @@ footer span a:hover {
         flex: 100%;
     }
 
-    .services .serv-content .card {
+    .projects .serv-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -601,7 +627,7 @@ footer span a:hover {
         font-size: 20px;
     }
 
-    .services .serv-content .card {
+    .projects .serv-content .card {
         width: 100%;
     }
 }
