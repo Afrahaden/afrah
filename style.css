@@ -320,7 +320,7 @@ section .title::after {
 .projects .title::after,
 .teams .title::after {
     background: #111;
-    content: "Personal projects";
+    /* content: "Personal projects"; */
 }
 
 .projects .serv-content .card {
