@@ -266,7 +266,7 @@ section .title::after {
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 35%;
 }
 
 .about .about-content .right {
@@ -277,10 +277,6 @@ section .title::after {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
-}
-
-.about .about-content .right .text span {
-    color: #733ef0;
 }
 
 .about .about-content .right p {
@@ -304,6 +300,7 @@ section .title::after {
     color: #733ef0;
     background: none;
 }
+
 
 /* projects section styling */
 .projects,
@@ -379,7 +376,7 @@ section .title::after {
 .project-link:hover{
     color: #fff;
     background: #222;
-    transition: all 0.3s ease;
+    transition: all 1s ease;
 }
 
 /* contact section styling */
